@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>payoo banking system</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>payoo banking system</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>payoo banking</h1>
+
+<body class="bg-slate-950 ">
+  <section class="max-w-screen-sm min-h-screen bg-white mx-auto">
+    <header>
+      <nav class="flex items-center justify-center relative">
+        <img class="relative" src="assets/bg.png" alt="">
+        <img class="absolute" src="assets/Group.png" alt="">
+      </nav>
+    </header>
+    <!-- log in  nn -->
+    <div class="   ">
+      <div class="hero-content flex-col lg:flex-row-reverse">
+
+        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+          <form class="card-body">
+            <fieldset class="fieldset">
+              <label class="fieldset-label">phone number</label>
+              <input value="12345678910" id="mobile-number" type="number" class="input" placeholder="enter your number"
+                required />
+              <label class="fieldset-label">4 digit pin</label>
+              <input value="1234" id="pin-number" type="number" class="input" placeholder="4 digit pin" required />
+              <div><a class="link link-hover">Forgot pin?</a></div>
+              <button id="login-btn" class="btn btn-neutral mt-4 bg-blue-500">Login</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script/login.js"></script>
 </body>
+
 </html>
