@@ -29,11 +29,11 @@
                 <!-- card section -->
                 <div class="grid grid-cols-3 mt-10 gap-3">
                     <!-- box -->
-                    <div class="box border rounded-xl p-3 cursor-pointer">
+                    <div id="add-money-card" class="box border rounded-xl p-3 cursor-pointer">
                         <img class="mx-auto w-8" src="assets/wallet1.png" alt="">
                         <h1 class="text-2xl font-bold text-blue-600  text-center">Add Money</h1>
                     </div>
-                    <div class="box border rounded-xl p-3 ">
+                    <div id="cash-out-card" class="box border rounded-xl p-3 ">
                         <img class="mx-auto w-10" src="assets/money1.png" alt="">
                         <h1 class="text-2xl font-bold text-blue-600  text-center">cash out </h1>
                     </div>
@@ -56,7 +56,7 @@
                 </div>
 
 <!-- add money  -->
-<section class="mt-10">
+<section id="addmoney" class="mt-10">
 <h1 class="text-3xl font-bold ">add money</h1>
 <div class="">
     <div class="hero-content flex-col lg:flex-row-reverse">
@@ -80,7 +80,7 @@
             <input id="amount-input" type="number" class="input" placeholder="Add Amount to withdraw" />
             <label class="fieldset-label font-bold" for="">Pin Number</label>
             <input id="pin-input" value="1234" type="number"class="input" placeholder="Enter 4 digit pin number"  name="" id="">
-            <div><a class="link link-hover">Forgot password?</a></div>
+            
             <button id="btn-add-money" class="bg-blue-700 btn btn-neutral mt-4 border-none">add Money</button>
           </fieldset>
         </div>
@@ -90,11 +90,28 @@
 
 <!--  -->
 </section>
-<!-- add money end -->
+<!-- add money end up 92 -->
+ <!-- cash out section -->
+  <section id="cashout" class="hero-content flex-col">
+    <h1 class="text-2xl font-bold">cash out</h1>
+    <fieldset class="fieldset">
+        <label class="fieldset-label font-bold">Bank Account Number</label>
+        <input  value="12345678910" type="number" class="input" placeholder="Bank Account Number" />
+        <label class="fieldset-label font-bold">Amount to Add</label>
+        <input id="amount-input" type="number" class="input" placeholder="Add Amount to withdraw" />
+        <label class="fieldset-label font-bold" for="">Pin Number</label>
+        <input id="pin-input" value="1234" type="number"class="input" placeholder="Enter 4 digit pin number"  name="" id="">
+        
+        <button id="btn-add-money" class="bg-blue-700 btn btn-neutral mt-4 border-none">Cashout</button>
+      </fieldset>
+  </section>
+  <!-- cash out up -->
             </section>
         </header>
     </section>
-    <script src="script/btn-add-money.js"></script>
+    <!-- <script src="script/btn-add-money.js"></script> -->
+     <script src="script/recup-btn-add.js"></script>
+     <script src="script/toggle.js"></script>
 </body>
 
 </html>
