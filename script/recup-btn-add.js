@@ -18,7 +18,7 @@ const convertMainBalence=parseFloat(mainBalence)
 
 
 if (amountInput && pinInput) {
-   if (convertPinInput===12345) {
+   if (convertPinInput===1234) {
     // console.log('thik ase')
     const sum =convertAmountInput+convertMainBalence
     // console.log(sum)
@@ -26,7 +26,7 @@ if (amountInput && pinInput) {
    document.getElementById('main-balence').innerText=sum
    }
    else{
-    console.log('vul pin')
+    alert('vul pin')
    }
 }
 else{
